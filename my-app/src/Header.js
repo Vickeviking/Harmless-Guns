@@ -3,6 +3,8 @@ import "./Header.css";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faSearch} from '@fortawesome/free-solid-svg-icons'
 import {faShoppingCart} from '@fortawesome/free-solid-svg-icons'
+import {faCaretDown} from '@fortawesome/free-solid-svg-icons'
+import {faGlobe} from '@fortawesome/free-solid-svg-icons'
 
 function Header() {
   return (
@@ -16,6 +18,11 @@ function Header() {
  </div>
 
     <div className="header_nav">
+
+        <div className="lang">
+        <FontAwesomeIcon className="header_globeIcon" icon={faGlobe}></FontAwesomeIcon>
+        <FontAwesomeIcon className="header_globeIcon" icon={faCaretDown}></FontAwesomeIcon>
+        </div>
 
         <div className="header_option">
         <span className="header_optionLineOne">Hello Guest</span>
