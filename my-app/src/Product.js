@@ -1,6 +1,6 @@
 import React from 'react';
-import './Product.css'
-import './Home.css'
+import './Dashboard_Css/Product.css'
+import './Dashboard_Css/Home.css'
 
 function Product({title, image, price, rating}) //prop
 {

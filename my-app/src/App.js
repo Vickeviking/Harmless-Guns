@@ -1,18 +1,32 @@
 import React from "react";
-import './App.css';
 import Header from "./Header";
-import SubHeader from "./SubHeader";
 import Home from "./Home";
+import {BrowserRouter as Router, Switch, Route }
+from "react-router-dom";
 
 function App() {
   return (
     // BEM naming convension
     //länkar in sidorna
-    <div className="App">
-      <Header />
-      <SubHeader />  
-      <Home />
+    <Router>
+  <div className="App">
+    <Switch>
+
+<Route path="/checkout">
+<Header/> 
+<Checkout />
+</Route>
+
+
+<Route path="/">
+<Header/> 
+<Home />
+</Route>
+
+    </Switch>
     </div>
+    </Router>
+  
   );
 }
 
