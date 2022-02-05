@@ -9,7 +9,7 @@ import {faGlobe} from '@fortawesome/free-solid-svg-icons'
 function Header() {
   return (
 <div className="Header">
-   <img className="Header_logo" src={require('./img/AmazonLogga.gif')} />
+   <h1 className="rubrikName">Harmless Guns</h1>
    <div className="header_search">
         <input
         className="header_searchInput" type="text"/>
@@ -33,11 +33,6 @@ function Header() {
         <span className="header_optionLineOne">Return</span>
         <span className="header_optionLineTwo">& Orders</span>
         </div>
-
-        <div className="header_option">
-        <span className="header_optionLineOne">Your</span>
-        <span className="header_optionLineTwo">Prime</span>
-        </div> 
 
         <div className="header_optionBasket">
             <FontAwesomeIcon className="header_shopingBasket" icon={faShoppingCart}></FontAwesomeIcon>

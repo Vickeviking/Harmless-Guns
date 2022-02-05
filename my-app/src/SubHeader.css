@@ -41,8 +41,21 @@
 
 .Announcement{
     justify-self: end;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Space{
+    width:2em;
 }
 
 .Announcement h1{
-    font-size: 1.5em;
+    font-size: 1em;
+    justify-self: end;
+}
+
+.SubNav a{
+    color: white;
+    text-decoration: none;
 }

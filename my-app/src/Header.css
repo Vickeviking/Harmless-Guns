@@ -8,12 +8,12 @@
   z-index: 100;
 }
 
-.Header_logo{
-   width: 100px;
-   object-fit: contain;
-   margin: 0 20px;
-   margin-top: 18px;
-
+.rubrikName{
+    color: #4feded;
+    font-size: 1em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    font-style: italic;
 }
 
 .header_search {
@@ -34,7 +34,7 @@
 .header_searchIcon{
     padding: 5px;
     height: 22px !important;
-    background-color: #cd9042;
+    background-color: #4feded;
 }
 
 

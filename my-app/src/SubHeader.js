@@ -16,19 +16,20 @@ function Subheader() {
 <div className='SubNav'>
     
 <div className='PrimeNav'> 
-<h2>Prime</h2>
+<h2>Collections </h2>
 <FontAwesomeIcon className='CaretIcon' icon={faCaretDown}></FontAwesomeIcon>
 </div>
-<h2>Best Seller</h2>
-<h2>Offers</h2>
-<h2>Gift Idea</h2>
-<h2>Customer Service</h2>
-<h2>PC & Video Games</h2>
+<h2><a href="">Best Seller</a> </h2>
+<h2><a href="">Offers</a> </h2>
+<h2><a href="">Gift Idea</a> </h2>
+<h2><a href="">Customer Service</a> </h2>
+<h2><a href="">PC & Video Games</a> </h2>
 
 </div>
 
 <div className='Announcement'>
-<h1>Brands of Sweden - Discover The Store</h1>
+  <div className='Space'></div>
+<h1>Discover our new 1945 Collection  </h1>
 </div>
 
     </div>
