@@ -23,7 +23,7 @@ function Subheader() {
 <h2><a href="">Offers</a> </h2>
 <h2><a href="">Gift Idea</a> </h2>
 <h2><a href="">Customer Service</a> </h2>
-<h2><a href="">PC & Video Games</a> </h2>
+<h2><a href="">Valentines Guns</a> </h2>
 
 </div>
 

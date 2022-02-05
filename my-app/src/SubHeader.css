@@ -3,6 +3,7 @@
     display: flex;
     color: white;
     height: 2.5em;
+    position: sticky;
 }
 
 .More{
@@ -30,6 +31,7 @@
     height: 2.5em;
     justify-content: space-evenly;
     font-weight: normal;
+    gap: 1em;
     opacity: 80%;
 
 }
