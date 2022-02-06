@@ -1,21 +1,37 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory} from 'react-router-dom';
 import './Dashboard_Css/Login.css';
 import logo from './img/Logo.gif';
+import {auth} from './firebase';
 
 
 function Login() {
+    const history = useHistory();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
     const signIn = e => {
      e.preventDefault();
-     //firebase login 
+    
+     auth.signInWithEmailAndPassword(email, password)
+     .then(auth => {
+         history.push('/')
+     })
+     .catch(error => alert(error.message))
+
     }
 
     const register = e => {
         e.preventDefault();
-        // firebase register
+
+        auth.createUserWithEmailAndPassword(email, password)
+            .then((auth) => {
+                // it successfully created a new user with email and password
+              if(auth){
+                  history.push('/')
+              }
+            })
+            .catch(error => alert(error.message))
        }
 
   return( 
@@ -46,7 +62,7 @@ function Login() {
                 By Signing-in you agree to Harmless Guns Terms & Consitions, Please note that all guns are props and should not be used as other
             </p>
 
-            <button onClick={register} className='login_registerButton'>Don't have an account?</button>
+            <button onClick={register} className='login_registerButton'>Create your Account</button>
         </div>
 
   </div>

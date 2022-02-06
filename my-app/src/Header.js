@@ -8,10 +8,17 @@ import {faGlobe} from '@fortawesome/free-solid-svg-icons'
 import {faBars} from '@fortawesome/free-solid-svg-icons'
 import { Link } from "react-router-dom";
 import { useStateValue } from "./StateProvider";
+import { auth } from "./firebase";
 
 function Header() {
- const [{basket}, dispatch] = useStateValue();
+ const [{basket, user}, dispatch] = useStateValue();
   
+  const handleAuthentication = () => {
+    if (user){
+      auth.signOut();
+    }
+  }
+
   return (
     <div className="FullHeader"> 
 <div className="Header">
@@ -32,10 +39,10 @@ function Header() {
         <FontAwesomeIcon className="header_globeIcon" icon={faCaretDown}></FontAwesomeIcon>
         </div>
 
-        <Link to='/login'>
-        <div className="header_option">
-        <span className="header_optionLineOne">Hello Guest</span>
-        <span className="header_optionLineTwo">Sign In</span>
+        <Link to={!user && '/login'}>
+        <div onClick={handleAuthentication} className="header_option">
+        <span className="header_optionLineOne">Hello {user ? user?.email : 'Guest'}</span>
+        <span className="header_optionLineTwo">{user ? 'Sign Out' : 'Sign In'}</span>
         </div>
         </Link>
 

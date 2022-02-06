@@ -6,12 +6,13 @@ import { useStateValue } from './StateProvider';
 import Subtotal from './Subtotal';
 
 function Checkout() {
-  const[{basket}, dispatch] = useStateValue(); 
+  const[{basket, user}, dispatch] = useStateValue(); 
   
   return(<div className='Checkout'>
       <div className='checkout_left'>
         <img className="checkout_ad" src="https://www.houseoforganics.co.uk/wp-content/uploads/2016/11/SSL-banner.jpg" alt="{baner}" />
         <div>
+          <h3>{user.email}</h3>
           <h2 className='checkout_title'>
               Your shopping Basket
           
