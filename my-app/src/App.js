@@ -3,6 +3,7 @@ import Header from "./Header";
 import Home from "./Home";
 import {BrowserRouter as Router, Switch, Route }
 from "react-router-dom";
+import Checkout from "./Checkout";
 
 function App() {
   return (
@@ -10,22 +11,20 @@ function App() {
     //länkar in sidorna
     <Router>
   <div className="App">
+    <Header/> 
     <Switch>
 
 <Route path="/checkout">
-<Header/> 
-<Checkout />
+<Checkout/>
 </Route>
 
 
 <Route path="/">
-<Header/> 
 <Home />
-</Route>
-
+      </Route>
     </Switch>
-    </div>
-    </Router>
+  </div>
+</Router>
   
   );
 }

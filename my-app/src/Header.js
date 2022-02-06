@@ -6,13 +6,15 @@ import {faShoppingCart} from '@fortawesome/free-solid-svg-icons'
 import {faCaretDown} from '@fortawesome/free-solid-svg-icons'
 import {faGlobe} from '@fortawesome/free-solid-svg-icons'
 import {faBars} from '@fortawesome/free-solid-svg-icons'
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
     <div className="FullHeader"> 
-
 <div className="Header">
-   <h1 className="rubrikName">Harmless Guns</h1>
+  <Link to="/">
+  <h1 className="rubrikName">Harmless Guns</h1>
+  </Link>
    <div className="header_search">
         <input
         className="header_searchInput" type="text"/>
@@ -37,10 +39,13 @@ function Header() {
         <span className="header_optionLineTwo">& Orders</span>
         </div>
 
+        <Link to="/checkout">
         <div className="header_optionBasket">
             <FontAwesomeIcon className="header_shopingBasket" icon={faShoppingCart}></FontAwesomeIcon>
             <span className="header_optionLineTwo header_basketCount">0</span>
         </div>
+        </Link>
+        
 
     </div>
 

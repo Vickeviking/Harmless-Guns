@@ -14,6 +14,11 @@
  
 }
 
+.Header > a{
+    text-decoration: none;
+}
+
+
 .rubrikName{
     color: #4feded;
     font-size: 1.5em;
