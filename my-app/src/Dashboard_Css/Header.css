@@ -20,7 +20,7 @@
 
 
 .rubrikName{
-    color: #4feded;
+    color: goldenrod;
     font-size: 1.5em;
     margin-left: 0.5em;
     margin-right: 0.5em;
@@ -45,7 +45,7 @@
 .header_searchIcon{
     padding: 5px;
     height: 22px !important;
-    background-color: #4feded;
+    background-color: goldenrod;
 }
 
 

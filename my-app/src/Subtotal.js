@@ -1,16 +1,19 @@
 import React from 'react';
-import "./Subtotal.css";
+import "./Dashboard_Css/Subtotal.css";
 import CurrenzyFormat from "react-currency-format";
-import { faBasketballBall } from '@fortawesome/free-solid-svg-icons';
+import { useStateValue } from "./StateProvider";
+import { getBasketTotal } from "./reducer";
+
 
 function Subtotal() {
+  const [{basket}, dispatch] = useStateValue(); //hämtar data från data layer
+  console.log(basket);
   return(<div className='subtotal'>
       <CurrenzyFormat
           renderText={(value) => (
               <>
               <p>
-                Subtotal (0 items):
-                <strong>0</strong>
+              Subtotal ({basket.length} items): <strong>{value}</strong>
                 </p>
                 <small className='subtotal_gift'>
                     <input type="checkbox" /> This order 
@@ -19,11 +22,13 @@ function Subtotal() {
                 </>
           )}
           decimalScale={2}
-          value={0}
+          value={getBasketTotal(basket)}
           displayType={"text"}
           thousandSeperator={true}
           prefix={"$"}
       />
+
+        <button>Proceed to Checkout</button>
 
   </div>
   );

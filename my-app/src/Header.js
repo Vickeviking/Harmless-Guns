@@ -7,8 +7,11 @@ import {faCaretDown} from '@fortawesome/free-solid-svg-icons'
 import {faGlobe} from '@fortawesome/free-solid-svg-icons'
 import {faBars} from '@fortawesome/free-solid-svg-icons'
 import { Link } from "react-router-dom";
+import { useStateValue } from "./StateProvider";
 
 function Header() {
+ const [{basket}, dispatch] = useStateValue();
+  
   return (
     <div className="FullHeader"> 
 <div className="Header">
@@ -29,10 +32,12 @@ function Header() {
         <FontAwesomeIcon className="header_globeIcon" icon={faCaretDown}></FontAwesomeIcon>
         </div>
 
+        <Link to='/login'>
         <div className="header_option">
         <span className="header_optionLineOne">Hello Guest</span>
         <span className="header_optionLineTwo">Sign In</span>
         </div>
+        </Link>
 
         <div className="header_option">
         <span className="header_optionLineOne">Return</span>
@@ -42,7 +47,7 @@ function Header() {
         <Link to="/checkout">
         <div className="header_optionBasket">
             <FontAwesomeIcon className="header_shopingBasket" icon={faShoppingCart}></FontAwesomeIcon>
-            <span className="header_optionLineTwo header_basketCount">0</span>
+            <span className="header_optionLineTwo header_basketCount">{basket?.length}</span>
         </div>
         </Link>
         
