@@ -40,40 +40,46 @@ function Payment() {
     console.log("The secret is", clientSecret);
 
     const handleSubmit = async (event) => {
-        //stripe goes here
+        // do all the fancy stripe stuff...
         event.preventDefault();
         setProcessing(true);
+
         const payload = await stripe.confirmCardPayment(clientSecret, {
-            payment_method:{
+            payment_method: {
                 card: elements.getElement(CardElement)
             }
-        }).then(({paymentIntent}) => { // payment confirmation
+        }).then(({ paymentIntent }) => {
+            // paymentIntent = payment confirmation
+                console.log("Done");
+            db
+              .collection('users')
+              .doc(user?.uid)
+              .collection('orders')
+              .doc(paymentIntent.id)
+              .set({
+                  basket: basket,
+                  amount: paymentIntent.amount,
+                  created: paymentIntent.created
+              })
 
-                db.collection('users').doc(user?.id)
-                .collection('orders')
-                .doc(paymentIntent.id)
-                .set({
-                    basket: basket,
-                    amount: paymentIntent.amount,
-                    created: paymentIntent.created
-                })
+            setSucceeded(true);
+            setError(null)
+            setProcessing(false)
 
-                setSucceeded(true);
-                setError(null);
-                setProcessing(false);
+            dispatch({
+                type: 'EMPTY_BASKET'
+            })
 
-                dispatch({
-                    type: 'EMPTY_BASKET'
-                })
-
-                history.replace('/orders'); //jag använder replace så att dem inte kan komma tillbaka 
+            history.replace('/orders')
         })
+
     }
 
     const handleChange = event => {
+        // Listen for changes in the CardElement
+        // and display any errors as the customer types their card details
         setDisabled(event.empty);
         setError(event.error ? event.error.message : "");
-
     }
 
   return (

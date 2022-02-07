@@ -12,7 +12,8 @@ function Checkout() {
       <div className='checkout_left'>
         <img className="checkout_ad" src="https://www.houseoforganics.co.uk/wp-content/uploads/2016/11/SSL-banner.jpg" alt="{baner}" />
         <div>
-          <h3>{user.email}</h3>
+          <h3> {user?.email}</h3>
+
           <h2 className='checkout_title'>
               Your shopping Basket
           

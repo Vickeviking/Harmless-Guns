@@ -46,10 +46,12 @@ function Header() {
         </div>
         </Link>
 
+        <Link to={'/orders'}>
         <div className="header_option">
         <span className="header_optionLineOne">Return</span>
         <span className="header_optionLineTwo">& Orders</span>
         </div>
+        </Link>
 
         <Link to="/checkout">
         <div className="header_optionBasket">
@@ -69,7 +71,7 @@ function Header() {
 
 <div className='More'>
 <FontAwesomeIcon className='BarsIcon' icon={faBars}></FontAwesomeIcon>
-<h2>Alla</h2>
+<h2>All</h2>
 </div>
 
 <div className='SubNav'>

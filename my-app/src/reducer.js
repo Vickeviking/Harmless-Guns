@@ -17,6 +17,13 @@ export const getBasketTotal = (basket) =>
               basket: [...state.basket, action.item],
             };
 
+          
+            case "EMPTY_BASKET":
+              return {
+                ...state,
+                basket: []
+              };
+
           case "REMOVE_FROM_BASKET":
               const index = state.basket.findIndex(
                 (basketItem) => basketItem.id === action.id //matchar någon av basket id the action id? Ger dig den första o tar där med bara rbort den första
@@ -44,11 +51,6 @@ export const getBasketTotal = (basket) =>
               user: action.user
             }
 
-          case "EMPTY_BASKET":
-            return {
-              ...state,
-              basket: []
-            }
 
           default:
             return state;
