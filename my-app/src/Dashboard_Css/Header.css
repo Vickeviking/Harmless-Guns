@@ -1,67 +1,119 @@
-.FullHeader{
+:root{
+    --primary:goldenrod ;
+    --light: #ebebeb;
+    --dark:#131921 ;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+
     display: flex;
-    flex-direction: column;
-    top: 0;
-    z-index: 100;
-    position: sticky;
-}
-
-.Header {
-  height: 60px;
-  display: flex;
-  align-items: center;
-  background-color: #131921;
- 
-}
-
-.Header > a{
-    text-decoration: none;
-}
-
-
-.rubrikName{
-    color: goldenrod;
-    font-size: 1.5em;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-    font-style: italic;
-}
-
-.header_search {
-    display: flex;
-    flex: 1;
     align-items: center;
-    border-radius: 24px;
+    justify-content: space-between;
+}
+
+nav{
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    background-color: var(--dark);
+    padding: 16px 32px;
+    border-bottom: 3px solid var(--primary)
 
 }
 
-.header_searchInput{
-    height: 12px;
-    padding: 10px;
-    border: none;
-    width: 100%;
+.hamburger {
+ display: block;
+ position: relative;
+ z-index: 1;
+
+ user-select: none;
+
+ appearance: none;
+ border: none;
+ outline: none;
+ background: none;
+ cursor: pointer;
+
 }
 
-.header_searchIcon{
-    padding: 5px;
-    height: 22px !important;
-    background-color: goldenrod;
-}
-
-
-.header_optionLineOne{
-    font-size: 10px;
-}
-
-.header_optionLineTwo{
-    font-size: 13px;
+h1 {
+    color: goldenrod ;
+    font-size: 2em;
     font-weight: 800;
+    letter-spacing: 1.5px;
+
+
+}
+
+.hamburger span{
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position:relative;
+
+    background-color: var(--light) ;
+    border-radius: 6px;
+    z-index: 1;
+
+    transform-origin: 0 0;
+
+    transition: 0.4s ;
+
+}
+
+h2{
+    font-size: 1em;
+}
+
+.hamburger:hover span:nth-child(2){
+    transform: translateX(10px);
+    background-color: var(--primary) ;
+}
+
+.menu{
+    display: none;
+    flex: 1 1 0%;
+    justify-content: flex-end;
+    margin: 0 -16px;
+}
+
+.menu a{
+    color: var(--dark);
+    margin: 0 16px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.4s;
+    padding: 8px 16px;
+    background-color: var(--primary);
+    border-radius: 99px;
+    font-size: 1em;
+
+}
+
+
+@media (min-width: 768px) {
+    .hamburger{
+        display: none;
+    }
+    .menu {
+        display: flex;
+    }
+
 }
 
 .header_optionBasket{
     display: flex;
     align-items: center;
-    color: white;
 }
 
 .header_basketCount{
@@ -69,94 +121,3 @@
     margin-right: 10px;
 }
 
-.header_nav{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.header_option{
-    display: flex;
-    flex-direction: column;
-    margin-left: 10px;
-    margin-right: 10px;
-    color: white;
-}
-
-.lang{
-    display: flex;
-    align-items: center;
-}
-
-.header_globeIcon{
-    color: white;
-    padding-left: 0.3em;
-}
-
-.SubHeaderNav{
-    background-color: #232f3e;
-    display: flex;
-    color: white;
-    height: 2.5em;
-    position: sticky;
-}
-
-.More{
-    padding: 1em;
-    display: flex;
-    align-items: center;
-}
-
-.More h2{
-    font-size: 1em;
-    font-weight: 700;
-    margin-left: 0.2em;
-}
-
-.PrimeNav{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.SubNav{
-    display: flex;
-    align-items: center;
-    width: 60%;
-    height: 2.5em;
-    justify-content: space-evenly;
-    font-weight: normal;
-    gap: 1em;
-    opacity: 80%;
-
-}
-
-.SubNav h2{
-    font-size: 1em;
-}
-
-
-.Announcement{
-    justify-self: end;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.Space{
-    width:2em;
-}
-
-.Announcement h1{
-    font-size: 1em;
-    justify-self: end;
-}
-
-.SubNav a{
-    color: white;
-    text-decoration: none;
-}
-
-.FullHeader{
-    display: flex;
-    flex-direction: column;
-}
