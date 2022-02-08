@@ -41,8 +41,10 @@ function Header() {
           <h2>Our Stock</h2>
           </Link>
 
-          <Link to={'/login'}>
+          <Link to={!user && '/login'}>
+          <div onClick={handleAuthentication} className="header_option">
           <h2>{user ? 'Sign Out' : 'Sign In'}</h2>
+          </div>
           </Link>
 
           
