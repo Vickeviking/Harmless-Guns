@@ -9,7 +9,7 @@ import { useHistory } from 'react-router-dom';
 function Subtotal() {
   const history = useHistory();
   const [{basket}, dispatch] = useStateValue(); //hämtar data från data layer
-  console.log(basket);
+
   return(<div className='subtotal'>
       <CurrenzyFormat
           renderText={(value) => (
