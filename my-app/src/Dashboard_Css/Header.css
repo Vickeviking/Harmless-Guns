@@ -50,6 +50,7 @@ h1 {
     font-size: 2em;
     font-weight: 800;
     letter-spacing: 1.5px;
+    
 
 
 }
@@ -121,3 +122,69 @@ h2{
     margin-right: 10px;
 }
 
+.dropbar{
+    background-color: #131921;
+    position:absolute;
+    top: 4em; right: 0em;
+    width: 100%;
+
+}
+
+.dropbarNav{
+    display: flex;
+    position: relative;
+}
+
+.dropbar h2{
+
+text-align: center;
+padding: 1em;
+font-size: 1.5em;
+border-bottom: 1px solid goldenrod;
+color: white;
+}
+
+.dropbar h2:hover{
+background-color: #1a222c;
+}
+
+.burgerAndNav{
+    display: flex;
+}
+
+.hamburgerActive span{
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position:relative;
+
+    background-color: var(--light) ;
+    border-radius: 6px;
+    z-index: 1;
+
+    transform-origin: 0 0;
+
+    transition: 0.4s ;
+}
+
+.hamburgerActive{
+    display: block;
+    position: relative;
+    z-index: 1;
+   
+    user-select: none;
+   
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    margin-left: 7em;
+    margin-bottom: 0.7em;
+}
+
+.dropbarTime{
+    display: flex;
+    flex-direction: column-reverse;
+}

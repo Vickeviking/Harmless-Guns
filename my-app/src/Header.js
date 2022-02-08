@@ -24,50 +24,50 @@ function Header() {
    }
   return (
     <nav>
-      <div className="container">
+      <div className={isActive ? "container" : "dropbarNav"}>
 
       <Link to={'/'} style={{ textDecoration: 'none' }}>
       <h1>Harmless Guns</h1>
       </Link>
      
-
+<div className={isActive ? "burgerAndNav" : "dropbarTime"}>
         <div className={isActive ? "menu" : "dropbar"}>
          
-          <Link to={'/'}>
+          <Link to={'/'} style={{ textDecoration: 'none' }}>
           <h2>Home</h2>
           </Link>
 
-          <Link to={'/login'}>
+          <Link to={'/login'} style={{ textDecoration: 'none' }}>
           <h2>Our Stock</h2>
           </Link>
 
-          <Link to={!user && '/login'}>
+          <Link to={!user && '/login'} style={{ textDecoration: 'none' }}>
           <div onClick={handleAuthentication} className="header_option">
           <h2>{user ? 'Sign Out' : 'Sign In'}</h2>
           </div>
           </Link>
-
+         
           
-        <Link to={'/orders'}>
+        <Link to={'/orders'} style={{ textDecoration: 'none' }}>
         <div className="header_option">
-        <span className="header_optionLineOne">Return & Orders</span>
+        <h2><span className="header_optionLineOne">Return & Orders</span></h2>
         </div>
         </Link>
 
-          <Link to="/checkout">
-        <div className="header_optionBasket">
-            <FontAwesomeIcon className="header_shopingBasket" icon={faShoppingCart}></FontAwesomeIcon>
-            <span className="header_optionLineTwo header_basketCount">{basket?.length}</span>
+          <Link to={"/checkout"} style={{ textDecoration: 'none' }} >
+        <div className={isActive ? " header_optionBasket" : "cartFlex"}>
+          <h2> <FontAwesomeIcon className="header_shopingBasket" icon={faShoppingCart}></FontAwesomeIcon><span className="header_optionLineTwo header_basketCount">{basket?.length}</span></h2> 
         </div>
         </Link>
 
         </div>
 
-        <button onClick={handleToggle} className="hamburger">
+        <button onClick={handleToggle} className={isActive ? "hamburger" : "hamburgerActive"}>
           <span></span>
           <span></span>
           <span></span>
         </button>
+        </div>
       </div>
      
     </nav>

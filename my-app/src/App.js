@@ -14,6 +14,7 @@ import { useStateValue } from "./StateProvider";
 import Payment from "./Payment";
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements} from "@stripe/react-stripe-js";
+import Footer from "./Footer";
 
 const promise = loadStripe('pk_test_51KQGFgAqBpxcVG5VWEMgXW84xp29c2E2Toacwz4LBOhVLJtzg8LiF7nZa79Vd8VWikujmwOrObXpvu8A4A1lifPk00r2bOANdx');
 
@@ -73,6 +74,7 @@ function App() {
 <Route path="/">
 <Header/> 
 <Home />
+<Footer />
       </Route>
 
     </Switch>
