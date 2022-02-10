@@ -1,0 +1,22 @@
+footer{
+    background: #131921;
+    display: flex;
+    justify-content: space-around;
+}
+
+.Del{
+width:12em;
+}
+
+
+@media only screen and (max-width: 600px) {
+	footer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Del{
+        text-align: center;
+    }
+  }
+
