@@ -1,11 +1,48 @@
 footer{
-    background: #131921;
+background-color: goldenrod;
+padding-bottom: 2em;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.omslag{
+    background: goldenrod;
     display: flex;
     justify-content: space-around;
+    
+}
+
+.borderStyling{
+    width: 80vw;
+    margin-left: 7vw;
+    border-bottom: 1px solid black;
 }
 
 .Del{
 width:12em;
+margin-bottom: 2em;
+
+}
+
+.Del h1{
+    margin-top: 2em;
+    font-size: 1.5em;
+    color: #131921;
+
+}
+
+.Del h2{
+    font-size: 1em;
+    color:  #131921;
+}
+
+.Partners{
+    display: flex;
+}
+
+.Partner_item{
+    margin-right: 2em;
 }
 
 
@@ -17,6 +54,11 @@ width:12em;
 
     .Del{
         text-align: center;
+    }
+
+    .Partners{
+        display: flex;
+        flex-direction: column;
     }
   }
 
