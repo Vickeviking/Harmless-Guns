@@ -4,6 +4,7 @@ padding-bottom: 2em;
 display: flex;
 flex-direction: column;
 justify-content: center;
+margin-top: 2em;
 }
 
 .omslag{
@@ -39,10 +40,15 @@ margin-bottom: 2em;
 
 .Partners{
     display: flex;
+    margin-left: 6em;
+    margin-top: 2.5em;
 }
 
-.Partner_item{
+
+
+.Partner_item img{
     margin-right: 2em;
+    width: 6em;
 }
 
 
