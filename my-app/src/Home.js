@@ -42,7 +42,7 @@ function Home() {
           <Paper className={classes.paper}>
             <Product 
             id="189768"
-            title='The famous m4 , This type was used in Moon Raker'
+            title='The famous m4'
             price={179.99}
             image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaXxioD13XuPx2SiN4etozvh3CbB78sK1vwA&usqp=CAU" 
             rating={4}
@@ -90,7 +90,7 @@ function Home() {
             <Paper className={classes.paper}>
             <Product 
                id="1899934"
-               title='A simple kill with our homemade catapult'
+               title='homemade catapult'
                price={35000} 
                image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP-dzpVCFoR5xA59l0fB_njIlH9cTuVlEbdQ&usqp=CAU" 
                rating={5}
@@ -102,7 +102,7 @@ function Home() {
             <Paper className={classes.paper}>
             <Product 
                id="19354"
-               title='Reach the highground with our Kraken'
+               title='Fighter Jet'
                price={300000} 
                image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMUe0-6yJtez3_NxItPsv-S42-S9l43E04mw&usqp=CAU"
                rating={5}
@@ -114,7 +114,7 @@ function Home() {
             <Paper className={classes.paper}>
             <Product 
                id="19354"
-               title='Reach the highground with our Kraken'
+               title='Fighter Jet'
                price={300000} 
                image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMUe0-6yJtez3_NxItPsv-S42-S9l43E04mw&usqp=CAU"
                rating={5}
@@ -126,7 +126,7 @@ function Home() {
             <Paper className={classes.paper}>
             <Product 
                id="19354"
-               title='Reach the highground with our Kraken'
+               title='Fighter Jet'
                price={300000} 
                image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMUe0-6yJtez3_NxItPsv-S42-S9l43E04mw&usqp=CAU"
                rating={5}

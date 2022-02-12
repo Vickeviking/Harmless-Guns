@@ -26,7 +26,7 @@ function Product({id, title, image, price, rating}) //prop
     return(
 <div className='product'>
     <div className='product_info'>
-        <p className='title'>{title}</p>
+        <h6 className='title'>{title}</h6>
         <p className='product_price'> 
          <small>$</small>
         <strong>{price}</strong>

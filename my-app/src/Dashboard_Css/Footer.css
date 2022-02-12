@@ -17,7 +17,7 @@ justify-content: center;
 .borderStyling{
     width: 80vw;
     margin-left: 7vw;
-    border-bottom: 1px solid goldenrod;
+    border-bottom: 1px solid #f33b1a;
 }
 
 .Del{
@@ -61,6 +61,7 @@ width: 10em;
 
     .Del{
         text-align: center;
+
     }
 
     .Partners{
@@ -74,7 +75,12 @@ width: 10em;
     .Partner_item{
         margin-right: 1px;
     }
-        
+    
+    .omslag{
+        display: flex;
+        flex-direction: column;
+        margin-left: 25vw;
+    }
 
 
 

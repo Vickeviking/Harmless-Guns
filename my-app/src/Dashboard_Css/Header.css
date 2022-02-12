@@ -1,5 +1,5 @@
 :root{
-    --primary:goldenrod ;
+    --primary:#f33b1a ;
     --light: #ebebeb;
     --dark:#131921 ;
 }
@@ -140,7 +140,7 @@ h2{
 text-align: center;
 padding: 1em;
 font-size: 1.5em;
-border-bottom: 1px solid goldenrod;
+border-bottom: 1px solid #f33b1a;
 color: white;
 }
 
