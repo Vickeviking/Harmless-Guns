@@ -7,6 +7,7 @@
     z-index: 1;
     height: 30em;
     height: fit-content;
+    overflow-y: hidden;
 
 }
 
@@ -40,22 +41,30 @@
 
 @media only screen and (max-width: 950px) {
     .product{
-        height: 350px;
+        height: 300px;
+        margin-bottom: 20px;
     }
 
     .product > img{
         height: 250px;
         width: 35vw;
+        margin-top: -3em;
     }
 
     .product_info{
         height: 10em;
     }
+
+    
+
+    .product button{
+        height: 2em;
+    }
   }
 
   @media only screen and (min-width: 1000px) {
     .product{
-        height: 400px;
+        height: 350px;
     }
 
     .product > img{
@@ -68,6 +77,11 @@
       font-size: 1.2em;
       font-weight: 600;
   }
+
+  
+  .product button{
+    height: 2em;
+}
 
   
 

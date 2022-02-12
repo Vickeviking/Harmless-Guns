@@ -26,10 +26,19 @@ function Header() {
     <nav>
       <div className={isActive ? "container" : "dropbarNav"}>
 
+      <div className="flex_meny">
       <Link to={'/'} style={{ textDecoration: 'none' }}>
-      <h1>Harmless Guns</h1>
+      <h1 className="title_namn" >Harmless Guns</h1>
+      
+      <button onClick={handleToggle} className={isActive ? "hamburger" : "hamburgerActive"}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </Link>
-     
+      </div>
+
+
 <div className={isActive ? "burgerAndNav" : "dropbarTime"}>
         <div className={isActive ? "menu" : "dropbar"}>
          
@@ -62,11 +71,7 @@ function Header() {
 
         </div>
 
-        <button onClick={handleToggle} className={isActive ? "hamburger" : "hamburgerActive"}>
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+       
         </div>
       </div>
      
