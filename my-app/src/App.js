@@ -6,6 +6,7 @@ from "react-router-dom";
 import Checkout from "./Checkout";
 import Login from "./Login";
 import Orders from "./Orders";
+import {Helmet} from "react-helmet";
 
 
 
@@ -45,9 +46,16 @@ function App() {
   return (
     // BEM naming convension
     //länkar in sidorna
+
+
     <Router>
   <div className="App">
-   
+    <Helmet>
+                <meta charSet="utf-8" />
+                <title>Harmless Guns</title>
+                <link rel="canonical" href="http://mysite.com/example" />
+                <meta name="description" content="Gun Store Weapon Shop" />
+  </Helmet> {/*ändrar titel*/}
     <Switch>
 
     <Route path="/orders">

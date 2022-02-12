@@ -1,5 +1,6 @@
 import React from 'react';
 import './Dashboard_Css/Footer.css'
+import partner from './img/partner_visa.gif'
 
 function Footer() {
   return (
@@ -39,11 +40,11 @@ function Footer() {
         </div>
 
         <div className='Partners'>
-<div className='Partner_item'></div>
-<div className='Partner_item'></div>
-<div className='Partner_item'></div>
-<div className='Partner_item'></div>
-<div className='Partner_item'></div>
+<div className='Partner_item'><img className='Partner_img' src={partner} alt="Partners" /></div>
+<div className='Partner_item'><img className='Partner_img' src={partner} alt="Partners" /></div>
+<div className='Partner_item'><img className='Partner_img' src={partner} alt="Partners" /></div>
+<div className='Partner_item'><img className='Partner_img' src={partner} alt="Partners" /></div>
+<div className='Partner_item'><img className='Partner_img' src={partner} alt="Partners" /></div>
         </div>
 
       </footer>
