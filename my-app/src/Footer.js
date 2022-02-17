@@ -39,37 +39,28 @@ function Footer() {
 
       <div className="Partners">
         <div className="Partner_item">
-          {" "}
-          <img src={partner} />{" "}
+          
+  <div className='Partner_item'><img className='Partner_img' src={partner} alt="Partners" /></div>
+  <div className='Partner_item'><img className='Partner_img' src={partner} alt="Partners" /></div>
+  <div className='Partner_item'><img className='Partner_img' src={partner} alt="Partners" /></div>
+  <div className='Partner_item'><img className='Partner_img' src={partner} alt="Partners" /></div>
+  <div className='Partner_item'><img className='Partner_img' src={partner} alt="Partners" /></div>
         </div>
+
+        <div className="SocialaMedier">
         <div className="Partner_item">
-          {" "}
-          <img src={partner} />{" "}
-        </div>
-        <div className="Partner_item">
-          {" "}
-          <img src={partner} />{" "}
-        </div>
-        <div className="Partner_item">
-          {" "}
-          <img src={partner} />{" "}
+        
+          <img src={instagram} />
+     
+          <img src={facebook} />
+
+          <img src={linkedIn} />
         </div>
       </div>
 
-      <div className="SocialaMedier">
-        <div className="Partner_item">
-          {" "}
-          <img src={instagram} />{" "}
-        </div>
-        <div className="Partner_item">
-          {" "}
-          <img src={facebook} />{" "}
-        </div>
-        <div className="Partner_item">
-          {" "}
-          <img src={linkedIn} />{" "}
-        </div>
       </div>
+
+     
     </footer>
   );
 }

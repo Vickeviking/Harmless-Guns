@@ -1,5 +1,5 @@
 :root{
-    --primary:goldenrod ;
+    --primary:#f33b1a ;
     --light: #ebebeb;
     --dark:#131921 ;
 }
@@ -45,7 +45,7 @@ nav{
 
 }
 
-h1 {
+.title_namn{
     color: goldenrod ;
     font-size: 2em;
     font-weight: 800;
@@ -127,6 +127,7 @@ h2{
     position:absolute;
     top: 4em; right: 0em;
     width: 100%;
+    height: fit-content;
 
 }
 
@@ -140,7 +141,7 @@ h2{
 text-align: center;
 padding: 1em;
 font-size: 1.5em;
-border-bottom: 1px solid goldenrod;
+border-bottom: 1px solid #f33b1a;
 color: white;
 }
 
@@ -168,6 +169,11 @@ background-color: #1a222c;
     transition: 0.4s ;
 }
 
+.flex_meny a{
+    display: flex;
+    flex-direction: row;
+}
+
 .hamburgerActive{
     display: block;
     position: relative;
@@ -180,11 +186,28 @@ background-color: #1a222c;
     outline: none;
     background: none;
     cursor: pointer;
-    margin-left: 7em;
-    margin-bottom: 0.7em;
 }
 
 .dropbarTime{
     display: flex;
     flex-direction: column-reverse;
 }
+
+@media only screen and (max-width: 950px) {
+    .title_namn{
+        color: goldenrod ;
+        font-size: 1.5em;
+        font-weight: 800;
+        letter-spacing: 1.5px;
+    }
+
+    .dropbarNav{
+        height:30em;
+    }
+
+    .flex_meny a{
+        display: flex;
+        flex-direction: row;
+        gap: 3.5em;
+    }
+  }
