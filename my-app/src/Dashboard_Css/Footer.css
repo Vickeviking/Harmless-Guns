@@ -41,7 +41,7 @@ margin-bottom: 2em;
 
 .Partners{
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
     margin-left: 7vw;
     margin-top: 2em;
 }
@@ -52,12 +52,19 @@ margin-bottom: 2em;
 
 .socialaMedier{
     display: flex;
+    margin-right: 9em;
 }
-
 
 .Partner_item img{
     margin-right: 2em;
-    width: 6em;
+    width: 5em;
+    height: 4em;
+}
+
+.mediaBild{
+    margin-right: 1em;
+    width: 3em;
+    height: 3em;
 }
 
 .Partner_img{

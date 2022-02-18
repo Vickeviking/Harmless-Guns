@@ -2,7 +2,7 @@ import React from "react";
 import "./Dashboard_Css/Footer.css";
 import partner from "./img/partner.gif";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import instagram from "./img/instagram.gif";
+import instagram from "./img/instagramLogo.png";
 import facebook from "./img/facebook.gif";
 import linkedIn from "./img/linkedIn.gif";
 
@@ -47,15 +47,17 @@ function Footer() {
   <div className='Partner_item'><img className='Partner_img' src={partner} alt="Partners" /></div>
         </div>
 
-        <div className="SocialaMedier">
-        <div className="Partner_item">
+        <div className="socialaMedier">
+    
         
-          <img src={instagram} />
+          <img className="mediaBild" src={instagram} />
      
-          <img src={facebook} />
+          <img className="mediaBild" src={instagram} />
 
-          <img src={linkedIn} />
-        </div>
+          <img className="mediaBild" src={instagram} />
+
+          <img className="mediaBild" src={instagram} />
+        
       </div>
 
       </div>

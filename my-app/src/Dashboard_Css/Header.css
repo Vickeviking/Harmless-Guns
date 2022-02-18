@@ -1,5 +1,5 @@
 :root{
-    --primary:#f33b1a ;
+    --primary: #ff0000 ;
     --light: #ebebeb;
     --dark:#131921 ;
 }
@@ -89,15 +89,21 @@ h2{
 }
 
 .menu a{
-    color: var(--dark);
+    /*color: var(--dark);
     margin: 0 16px;
     font-weight: 600;
     text-decoration: none;
     transition: 0.4s;
     padding: 8px 16px;
-    background-color: var(--primary);
+    background-color: goldenrod;
     border-radius: 99px;
-    font-size: 1em;
+    font-size: 1em;*/
+
+    color: goldenrod;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin: 0 16px;
 
 }
 
