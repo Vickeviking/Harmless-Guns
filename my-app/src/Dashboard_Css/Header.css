@@ -1,7 +1,7 @@
 :root{
     --primary: #ff0000 ;
     --light: #ebebeb;
-    --dark:#131921 ;
+    --dark: #675645 ;
 }
 
 *{
@@ -45,7 +45,7 @@ nav{
 }
 
 .title_namn{
-    color: goldenrod ;
+    color: #e1d798 ;
     font-size: 2em;
     font-weight: 800;
     letter-spacing: 1.5px;
@@ -98,7 +98,7 @@ h2{
     border-radius: 99px;
     font-size: 1em;*/
 
-    color: goldenrod;
+    color: #e1d798;
     font-weight: 600;
     text-decoration: none;
     font-size: 1.5em;
