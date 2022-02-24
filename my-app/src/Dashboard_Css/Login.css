@@ -7,12 +7,14 @@
 }
 
 .login_logo{
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
     object-fit: contain;
     width: 20em;
+    height: 10em;
     margin-right: auto;
     margin-left: auto;
+
 }
 
 .login_container{
@@ -24,12 +26,14 @@
     border: 1px solid lightgrey;
     padding: 20px;
     background-color: #122d40;
+    
 }
 
 .login_container > h1 {
     color:white ;
     font-weight: 500;
     margin-bottom: 20px;
+    overflow-y: hidden;
 }
 
 .login_container > form > h5{
@@ -37,6 +41,10 @@
     color:white ;
 }
 
+.login_container > form{
+    padding-bottom: 5px;
+   overflow-y: hidden; 
+}
 
 .login_container > form > input{
     height: 30px;

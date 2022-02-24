@@ -1,6 +1,6 @@
 import React from 'react';
 import './Dashboard_Css/Home.css';
-import logo from './img/HeroValentinesImg2.jpg'
+import logo from './img/HomeHero.jpg'
 import Product from "./Product";
 import {makeStyles} from "@material-ui/core/styles"
 import {Grid, Paper }from "@material-ui/core"
