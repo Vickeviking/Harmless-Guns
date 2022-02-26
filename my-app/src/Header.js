@@ -46,7 +46,7 @@ function Header() {
           <h2>Home</h2>
           </Link>
 
-          <Link to={'/login'} style={{ textDecoration: 'none' }}>
+          <Link to={'/stock'} style={{ textDecoration: 'none' }}>
           <h2>Our Stock</h2>
           </Link>
 
