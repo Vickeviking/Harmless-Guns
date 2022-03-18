@@ -1,0 +1,26 @@
+.Stock{
+    background-color: rgb(159, 190, 159);
+}
+
+
+.rubrikStock{
+    text-align: center;
+    padding: 2em;
+
+    color:#675645 ;
+}
+
+.produkterna{
+    display: flex;
+    justify-content: space-around;
+    padding: 2em;
+    border-top: 1px solid black;
+    margin-left: 3em;
+    margin-right: 3em;
+    align-items: center;
+}
+
+
+.ProduktTyp{
+    text-align: center;
+}

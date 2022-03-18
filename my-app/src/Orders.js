@@ -26,14 +26,21 @@ function Orders() {
     }
 
   }, [user])
+
+  const [isActive, setActive] = useState("false");  /*Här kollar vi om användaren är inloggad*/
+   const handleToggle = () => { 
+    setActive(!isActive);
+   }
+
   return(
       <div className='orders'>
-        <h1>Your Orders</h1>
+        <h1>{user ? 'Your orders' : ' login to see your orders!'}</h1>
         <div className='orders_order'>
             {orders?.map(order => (
               <Order order={order} /> 
             ))}
         </div>
+
       </div>
   )
 }
