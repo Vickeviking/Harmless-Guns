@@ -24,8 +24,8 @@ nav{
     position: sticky;
     top: 0;
     z-index: 99;
-    background-color: var(--dark);
-    padding: 16px 32px;
+    background-color:#5c7148 ;
+    padding: 16px 0px;
 
 }
 
@@ -128,7 +128,7 @@ h2{
 }
 
 .dropbar{
-    background-color: #131921;
+    background-color: var(--dark);
     position:absolute;
     top: 4em; right: 0em;
     width: 100%;
@@ -146,7 +146,7 @@ h2{
 text-align: center;
 padding: 1em;
 font-size: 1.5em;
-border-bottom: 1px solid #f33b1a;
+border-bottom: 1px solid #e1d798;
 color: white;
 }
 
@@ -200,10 +200,12 @@ background-color: #1a222c;
 
 @media only screen and (max-width: 950px) {
     .title_namn{
-        color: goldenrod ;
+        color: #e1d798 ;
         font-size: 1.5em;
         font-weight: 800;
         letter-spacing: 1.5px;
+        padding-left: 2em;
+        padding-right: 2em;
     }
 
     .dropbarNav{
@@ -214,5 +216,6 @@ background-color: #1a222c;
         display: flex;
         flex-direction: row;
         gap: 3.5em;
+        padding-bottom: 0;
     }
   }

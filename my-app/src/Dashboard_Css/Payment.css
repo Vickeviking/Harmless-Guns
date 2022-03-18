@@ -16,12 +16,11 @@
 .payment_section{
     display: flex;
     padding: 20px;
-    margin: 0 20px;
     border-bottom: 1px solid lightgrey;
 }
 
 .payment_title{
-    flex: 0.2 ;
+    flex: 0.3 ;
 }
 
 .payment_adress, .payment_items, .payment_details{
@@ -51,3 +50,11 @@
 
 
 }
+
+@media only screen and (min-width: 600px) {
+.payment_section{
+    margin: 0 20px;
+}
+
+
+  }
